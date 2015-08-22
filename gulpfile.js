@@ -23,13 +23,6 @@ gulp.task('css-main', function () {
   ;
 });
 
-gulp.task('js-main', function () {
-  return gulp.src(['js/rocket.js', 'js/link-colors.js'])
-    .pipe(concat('main.min.js'))
-    .pipe(gulp.dest('_includes'))
-  ;
-});
-
 gulp.task('build-css', ['css-main'], function () {
   return gulp.src('_includes/main.min.css')
     .pipe(cssnano())
@@ -37,17 +30,10 @@ gulp.task('build-css', ['css-main'], function () {
   ;
 });
 
-gulp.task('build-js', ['js-main'], function () {
-  return gulp.src('main.min.js')
-    .pipe(uglify())
-    .pipe(gulp.dest('_includes'))
-});
-
-gulp.task('build', ['build-css', 'build-js']);
+gulp.task('build', ['build-css']);
 
 gulp.task('watch', function() {
   gulp.watch('css/*.css', ['css-main']);
-  gulp.watch('css/*.js', ['js-main']);
 });
 
-gulp.task('default', ['css-main', 'js-main']);
+gulp.task('default', ['css-main']);
