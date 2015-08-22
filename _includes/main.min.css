@@ -6,10 +6,13 @@
   color: #cc401c;
 }
 
-/*.brand-dark {
-  color: var(--color-brand-dark);
+.brand-medium {
+  color: #8f2d15;
 }
-*/
+
+.brand-dark {
+  color: #7a2611;
+}
 @-ms-viewport { width: device-width; scale: 1; }
 @viewport { width: device-width; scale: 1; }
 
@@ -1529,6 +1532,9 @@ small, .milli {
 }
 html {
   overflow-x: hidden;
+
+  background-color: #fff;;
+
   font-family: "Bree Serif",sans-serif;
 }
 
@@ -1550,7 +1556,7 @@ strong {
 }
 
 a {
-  background-image: linear-gradient(to top, transparent 0, transparent .1em, currentColor .1em, currentColor .2em, transparent .2em, transparent 100%);
+  background-image: linear-gradient(to top, transparent 0, transparent .08rem, currentColor .08rem, currentColor .18rem, transparent .18rem, transparent 100%);
   text-shadow: .1em 0 0 #fff, .1em .1em 0 #fff, 0 .1em 0 #fff, -.1em .1em 0 #fff, -.1em 0 0 #fff;
 
   color: #cc401c;
@@ -1561,11 +1567,112 @@ a:hover {
   color: #f03607;
 }
 
-h1 {
+.no-mark-link {
+  background-image: none;
+  text-shadow: none;
+}
+
+.text-dark {
   color: #2e2b2b;
 }
 
-.social-link:before {
+.wrapper {
+  max-width: 38em;
+}
+
+.page {
+  padding-left: 70px;
+}
+
+.section {
+  position: relative;
+}
+
+.section:before {
+  content: " ";
+  bottom: 0;
+  left: -70px;
+  position: absolute;
+  top: 0;
+  width: 70px;
+
+  background-color: #cc401c;
+}
+
+.section-top {
+  background-color: #f0eae4;
+}
+
+.section-top a {
+  text-shadow: .1em 0 0 #f0eae4, .1em .1em 0 #f0eae4, 0 .1em 0 #f0eae4, -.1em .1em 0 #f0eae4, -.1em 0 0 #f0eae4;
+}
+
+.section-prof {
+  background-color: #f7f3ef;
+}
+
+.section-prof:before {
+  background-color: #ba3b1a;
+}
+
+.section-dev {
+  background-color: #f7f3ef;
+}
+
+.section-dev:before {
+  left: -30px;
+  width: 30px;
+
+  background-color: #a83517;
+}
+
+.section-prof a,
+.section-dev a {
+  text-shadow: .1em 0 0 #f7f3ef, .1em .1em 0 #f7f3ef, 0 .1em 0 #f7f3ef, -.1em .1em 0 #f7f3ef, -.1em 0 0 #f7f3ef;
+}
+
+.section-write:before {
+  background-color: #8f2d15;
+}
+
+.section-family:before {
+  left: -30px;
+  width: 30px;
+
+  background-color: #7a2611;
+}
+
+.photo {
+  overflow: hidden;
+  border-radius: 50%;
+  margin-left: 24px;
+  margin-left: 1.5rem;
+  margin-right: 24px;
+  margin-right: 1.5rem;
+}
+
+.social-link:after {
   content: "—";
-  color: #e2e2e2;
+  display: inline-block;
+  margin-left: .2em;
+
+  color: #dbd3cc;
+}
+
+.social-link:last-child:after {
+  content: none;
+}
+
+.top {
+  left: -56px;
+  position: absolute;
+  top: 32px;
+  top: 2rem;
+  width: 40px;
+
+  color: #fff;
+}
+
+.top:hover {
+  color: #fff;
 }
