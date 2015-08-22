@@ -46,8 +46,8 @@ gulp.task('build-js', ['js-main'], function () {
 gulp.task('build', ['build-css', 'build-js']);
 
 gulp.task('watch', function() {
-  gulp.watch('_includes/*.css', ['css-main']);
-  gulp.watch('_includes/*.js', ['js-main']);
+  gulp.watch('css/*.css', ['css-main']);
+  gulp.watch('css/*.js', ['js-main']);
 });
 
 gulp.task('default', ['css-main', 'js-main']);

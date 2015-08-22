@@ -4,5 +4,39 @@ html {
 }
 
 body {
+  min-height: 100vh;
   overflow-x: hidden;
+
+  color: var(--color-brown);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-weight: normal;
+}
+
+a {
+  background-image: linear-gradient(to top, transparent 0, transparent .1em, currentColor .1em, currentColor .2em, transparent .2em, transparent 100%);
+  text-shadow: .1em 0 0 #fff, .1em .1em 0 #fff, 0 .1em 0 #fff, -.1em .1em 0 #fff, -.1em 0 0 #fff;
+
+  color: var(--color-brand);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-brand-bright);
+}
+
+h1 {
+  color: var(--color-brown-dark);
+}
+
+.social-link::before {
+  content: "—";
+  color: #e2e2e2;
 }
