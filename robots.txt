@@ -1,0 +1,6 @@
+# robotstxt.org
+
+Sitemap: http://thomasjbradley.ca/sitemap.xml
+
+User-Agent: *
+Disallow:

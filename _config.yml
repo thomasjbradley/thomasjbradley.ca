@@ -1,0 +1,16 @@
+permalink: pretty
+
+exclude:
+  - README.md
+  - LICENSE
+  - gulpfile.js
+  - package.json
+  - .editorconfig
+  - .gitignore
+  - tmp
+  - node_modules
+  - css/*.css
+  - js/*.js
+
+kramdown:
+  input: GFM
