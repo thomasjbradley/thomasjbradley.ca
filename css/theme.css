@@ -45,11 +45,15 @@ a:hover {
 }
 
 .wrapper {
-  max-width: 38em;
+  padding: 3rem 0.75rem;
+}
+
+p {
+  max-width: 26em;
 }
 
 .page {
-  padding-left: 70px;
+  padding-left: 16px;
 }
 
 .section {
@@ -59,10 +63,10 @@ a:hover {
 .section::before {
   content: " ";
   bottom: 0;
-  left: -70px;
+  left: -16px;
   position: absolute;
   top: 0;
-  width: 70px;
+  width: 16px;
 
   background-color: var(--color-brand);
 }
@@ -76,7 +80,7 @@ a:hover {
 }
 
 .section-prof {
-  background-color: var(--color-brown-lightest);
+  background-color: var(--color-brown-medium);
 }
 
 .section-prof::before {
@@ -88,9 +92,6 @@ a:hover {
 }
 
 .section-dev::before {
-  left: -30px;
-  width: 30px;
-
   background-color: var(--color-brand-dark);
 }
 
@@ -99,22 +100,23 @@ a:hover {
   text-shadow: .1em 0 0 var(--color-brown-lightest), .1em .1em 0 var(--color-brown-lightest), 0 .1em 0 var(--color-brown-lightest), -.1em .1em 0 var(--color-brown-lightest), -.1em 0 0 var(--color-brown-lightest);
 }
 
+.section-write {
+  background-color: var(--color-brown-offwhite);
+}
+
 .section-write::before {
   background-color: var(--color-brand-darker);
 }
 
 .section-family::before {
-  left: -30px;
-  width: 30px;
-
   background-color: var(--color-brand-darkest);
 }
 
 .photo {
   overflow: hidden;
+  max-width: 340px;
+
   border-radius: 50%;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
 }
 
 .social-link::after {
@@ -130,14 +132,70 @@ a:hover {
 }
 
 .top {
-  left: -56px;
-  position: absolute;
-  top: 2rem;
-  width: 40px;
+  display: block;
+  margin: 0 .75rem -1.5rem;
+  padding-top: .75rem;
+  width: 30px;
 
   color: #fff;
 }
 
 .top:hover {
   color: #fff;
+}
+
+.rocket {
+  fill: var(--color-brand);
+}
+
+@media only screen and (min-width: 38em) {
+
+  .wrapper {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .page {
+    padding-left: 70px;
+  }
+
+  .section::before {
+    left: -70px;
+    width: 70px;
+  }
+
+  .rocket {
+    fill: #fff;
+  }
+
+  .top {
+    left: -56px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 2rem;
+    width: 40px;
+
+    color: #fff;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .wrapper {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .section-dev::before {
+    left: -30px;
+    width: 30px;
+  }
+
+  .section-family::before {
+    left: -30px;
+    width: 30px;
+  }
+
 }
