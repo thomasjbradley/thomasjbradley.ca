@@ -79,20 +79,23 @@ p {
   position: absolute;
   top: 0;
   width: 16px;
-
-  background-color: var(--color-brand);
 }
 
 .section-top {
-  background-color: var(--color-brown-lighter);
+  /*background-color: var(--color-brown-lighter);*/
+}
+
+.section-top::before,
+.section-top::after {
+  background-color: var(--color-brand);
 }
 
 .section-top a {
-  text-shadow: .1em 0 0 var(--color-brown-lighter), .1em .1em 0 var(--color-brown-lighter), 0 .1em 0 var(--color-brown-lighter), -.1em .1em 0 var(--color-brown-lighter), -.1em 0 0 var(--color-brown-lighter);
+  /*text-shadow: .1em 0 0 var(--color-brown-lighter), .1em .1em 0 var(--color-brown-lighter), 0 .1em 0 var(--color-brown-lighter), -.1em .1em 0 var(--color-brown-lighter), -.1em 0 0 var(--color-brown-lighter);*/
 }
 
 .section-prof {
-  background-color: var(--color-brown-medium);
+  /*background-color: var(--color-brown-medium);*/
 }
 
 .section-prof::before {
@@ -100,27 +103,29 @@ p {
 }
 
 .section-dev {
-  background-color: var(--color-brown-lightest);
+  /*background-color: var(--color-brown-lightest);*/
 }
 
-.section-dev::before {
+.section-dev::before,
+.section-dev::after {
   background-color: var(--color-brand-dark);
 }
 
 .section-prof a,
 .section-dev a {
-  text-shadow: .1em 0 0 var(--color-brown-lightest), .1em .1em 0 var(--color-brown-lightest), 0 .1em 0 var(--color-brown-lightest), -.1em .1em 0 var(--color-brown-lightest), -.1em 0 0 var(--color-brown-lightest);
+  /*text-shadow: .1em 0 0 var(--color-brown-lightest), .1em .1em 0 var(--color-brown-lightest), 0 .1em 0 var(--color-brown-lightest), -.1em .1em 0 var(--color-brown-lightest), -.1em 0 0 var(--color-brown-lightest);*/
 }
 
 .section-write {
-  background-color: var(--color-brown-offwhite);
+  /*background-color: var(--color-brown-offwhite);*/
 }
 
 .section-write::before {
   background-color: var(--color-brand-darker);
 }
 
-.section-family::before {
+.section-family::before,
+.section-family::after {
   background-color: var(--color-brand-darkest);
 }
 
@@ -211,13 +216,23 @@ p {
     padding-right: 3rem;
   }
 
-  .section-dev::before {
-    left: -30px;
-    width: 30px;
+  .page {
+    padding-right: 30px;
   }
 
+  .section-dev::before,
   .section-family::before {
-    left: -30px;
+    content: none;
+  }
+
+  .section-top::after,
+  .section-dev::after,
+  .section-family::after {
+    content: " ";
+    bottom: 0;
+    right: -30px;
+    position: absolute;
+    top: 0;
     width: 30px;
   }
 

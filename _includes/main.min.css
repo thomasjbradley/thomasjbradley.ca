@@ -1300,20 +1300,23 @@ p {
   position: absolute;
   top: 0;
   width: 16px;
-
-  background-color: #cc401c;
 }
 
 .section-top {
-  background-color: #f0eae4;
+  /*background-color: var(--color-brown-lighter);*/
+}
+
+.section-top:before,
+.section-top:after {
+  background-color: #cc401c;
 }
 
 .section-top a {
-  text-shadow: .1em 0 0 #f0eae4, .1em .1em 0 #f0eae4, 0 .1em 0 #f0eae4, -.1em .1em 0 #f0eae4, -.1em 0 0 #f0eae4;
+  /*text-shadow: .1em 0 0 var(--color-brown-lighter), .1em .1em 0 var(--color-brown-lighter), 0 .1em 0 var(--color-brown-lighter), -.1em .1em 0 var(--color-brown-lighter), -.1em 0 0 var(--color-brown-lighter);*/
 }
 
 .section-prof {
-  background-color: #f5f0eb;
+  /*background-color: var(--color-brown-medium);*/
 }
 
 .section-prof:before {
@@ -1321,27 +1324,29 @@ p {
 }
 
 .section-dev {
-  background-color: #f7f3ef;
+  /*background-color: var(--color-brown-lightest);*/
 }
 
-.section-dev:before {
+.section-dev:before,
+.section-dev:after {
   background-color: #a83517;
 }
 
 .section-prof a,
 .section-dev a {
-  text-shadow: .1em 0 0 #f7f3ef, .1em .1em 0 #f7f3ef, 0 .1em 0 #f7f3ef, -.1em .1em 0 #f7f3ef, -.1em 0 0 #f7f3ef;
+  /*text-shadow: .1em 0 0 var(--color-brown-lightest), .1em .1em 0 var(--color-brown-lightest), 0 .1em 0 var(--color-brown-lightest), -.1em .1em 0 var(--color-brown-lightest), -.1em 0 0 var(--color-brown-lightest);*/
 }
 
 .section-write {
-  background-color: #fcf8f4;
+  /*background-color: var(--color-brown-offwhite);*/
 }
 
 .section-write:before {
   background-color: #8f2d15;
 }
 
-.section-family:before {
+.section-family:before,
+.section-family:after {
   background-color: #7a2611;
 }
 
@@ -1435,13 +1440,23 @@ p {
     padding-right: 3rem;
   }
 
-  .section-dev:before {
-    left: -30px;
-    width: 30px;
+  .page {
+    padding-right: 30px;
   }
 
+  .section-dev:before,
   .section-family:before {
-    left: -30px;
+    content: none;
+  }
+
+  .section-top:after,
+  .section-dev:after,
+  .section-family:after {
+    content: " ";
+    bottom: 0;
+    right: -30px;
+    position: absolute;
+    top: 0;
     width: 30px;
   }
 
