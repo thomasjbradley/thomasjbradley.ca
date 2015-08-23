@@ -9,8 +9,7 @@
     "gulp-cssnano": "^1.0.0",
     "gulp-cssnext": "^1.0.1",
     "gulp-rename": "^1.2.2",
-    "gulp-replace": "^0.5.3",
-    "gulp-uglify": "^1.2.0"
+    "gulp-replace": "^0.5.3"
   },
   "scripts": {
     "gulp": "gulp",

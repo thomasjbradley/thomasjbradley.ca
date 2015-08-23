@@ -5,8 +5,7 @@ var
   cssnano = require('gulp-cssnano'),
   replace = require('gulp-replace'),
   rename = require('gulp-rename'),
-  concat = require('gulp-concat'),
-  uglify = require('gulp-uglify')
+  concat = require('gulp-concat')
 ;
 
 gulp.task('css-main', function () {
