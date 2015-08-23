@@ -23,6 +23,12 @@ strong {
   font-weight: normal;
 }
 
+::selection {
+  background-color: var(--color-brand);
+  color: #fff;
+  text-shadow: none;
+}
+
 a {
   background-image: linear-gradient(to top, transparent 0, transparent .08rem, currentColor .08rem, currentColor .18rem, transparent .18rem, transparent 100%);
   text-shadow: .1em 0 0 #fff, .1em .1em 0 #fff, 0 .1em 0 #fff, -.1em .1em 0 #fff, -.1em 0 0 #fff;
