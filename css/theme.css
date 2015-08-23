@@ -30,7 +30,7 @@ strong {
 }
 
 a {
-  background-image: linear-gradient(to top, transparent 0, transparent .08rem, currentColor .08rem, currentColor .18rem, transparent .18rem, transparent 100%);
+  background-image: linear-gradient(to top, transparent 0, transparent .08em, currentColor .08em, currentColor .16em, transparent .16em, transparent 100%);
   text-shadow: .1em 0 0 #fff, .1em .1em 0 #fff, 0 .1em 0 #fff, -.1em .1em 0 #fff, -.1em 0 0 #fff;
 
   color: var(--color-brand);
@@ -56,12 +56,26 @@ a:focus {
   color: var(--color-brown-dark);
 }
 
-.wrapper {
-  padding: 3rem 0.75rem;
-}
-
 p {
   max-width: 26em;
+}
+
+dl {
+  overflow: hidden;
+}
+
+dt {
+  clear: left;
+  float: left;
+  margin-right: .375rem;
+}
+
+dd {
+  margin: 0;
+}
+
+.wrapper {
+  padding: 3rem 0.75rem;
 }
 
 .page {
@@ -81,7 +95,8 @@ p {
   width: 16px;
 }
 
-.section-top {
+.section-top,
+.section-bottom {
   /*background-image: linear-gradient(to bottom right, var(--color-brown-offwhite), #fff);*/
   /*background-color: var(--color-brown-lighter);*/
   background-color: #fafafa;
@@ -94,6 +109,23 @@ p {
 
 .section-top a {
   /*text-shadow: .1em 0 0 var(--color-brown-lighter), .1em .1em 0 var(--color-brown-lighter), 0 .1em 0 var(--color-brown-lighter), -.1em .1em 0 var(--color-brown-lighter), -.1em 0 0 var(--color-brown-lighter);*/
+}
+
+.section-bottom {
+  color: #999;
+}
+
+.section-bottom::before,
+.section-bottom::after {
+  background-color: var(--color-brand-super-dark);
+}
+
+.section-bottom a {
+  color: #999;
+}
+
+.section-bottom a:hover {
+  color: #666;
 }
 
 .section-prof {
@@ -252,6 +284,7 @@ p {
   }
 
   .section-top::after,
+  .section-bottom::after,
   .section-dev::after,
   .section-family::after {
     content: " ";
