@@ -8,8 +8,6 @@
 
 #### [☛ thomasjbradley.ca](https://thomasjbradley.ca)
 
-![](thomasjbradley.jpg)
-
 Thomas J Bradley is a Professor, Developer, and Writer of The Open Web. I believe that everybody should perpetually learn, try, build, break, & fix things.
 
 - **[hey@thomasjbradley.ca](mailto:hey@thomasjbradley.ca)**
