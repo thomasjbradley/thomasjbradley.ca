@@ -84,6 +84,7 @@ p {
 .section-top {
   /*background-image: linear-gradient(to bottom right, var(--color-brown-offwhite), #fff);*/
   /*background-color: var(--color-brown-lighter);*/
+  background-color: #fafafa;
 }
 
 .section-top::before,
