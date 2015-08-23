@@ -35,6 +35,10 @@ a:hover {
   color: var(--color-brand-bright);
 }
 
+a:focus {
+  outline: 3px solid #000;
+}
+
 .no-mark-link {
   background-image: none;
   text-shadow: none;
