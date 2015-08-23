@@ -119,8 +119,13 @@ p {
 }
 
 .photo {
+  right: .75rem;
+  position: absolute;
+  top: 10px;
+  width: 70px;
+  height: 70px;
+
   overflow: hidden;
-  max-width: 340px;
 
   border-radius: 50%;
 }
@@ -137,16 +142,16 @@ p {
   content: none;
 }
 
-.top {
+.logo {
   display: block;
   margin: 0 .75rem -1.5rem;
-  padding-top: .75rem;
+  padding-top: 1rem;
   width: 30px;
 
   color: #fff;
 }
 
-.top:hover {
+.logo:hover {
   color: #fff;
 }
 
@@ -174,7 +179,13 @@ p {
     fill: #fff;
   }
 
-  .top {
+  .photo {
+    height: 80px;
+    top: 1rem;
+    width: 80px;
+  }
+
+  .logo {
     left: -56px;
     margin: 0;
     padding: 0;
@@ -202,6 +213,15 @@ p {
   .section-family::before {
     left: -30px;
     width: 30px;
+  }
+
+  .photo {
+    height: 240px;
+    right: 3rem;
+    top: 50%;
+    width: 240px;
+
+    transform: translateY(-50%);
   }
 
 }
