@@ -1371,16 +1371,18 @@ p {
   border-radius: 50%;
 }
 
-.social-link:after {
-  content: "—";
-  display: inline-block;
-  margin-left: .2em;
-
-  color: #dbd3cc;
+.link {
+  padding-left: 1.2em;
+  position: relative;
+  text-overflow: ellipsis;
 }
 
-.social-link:last-child:after {
-  content: none;
+.link:before {
+  content: "—";
+  left: 0;
+  position: absolute;
+
+  color: #dbd3cc;
 }
 
 .logo {
@@ -1439,6 +1441,15 @@ p {
     color: #fff;
   }
 
+  .social-links > li {
+    display: inline-block;
+  }
+
+  .link-short {
+    float: left;
+    width: 50%;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -1481,6 +1492,20 @@ p {
     -webkit-transform: translateY(-50%);
 
             transform: translateY(-50%);
+  }
+
+  .link-short {
+    float: none;
+    width: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 74em) {
+
+  .link-short {
+    float: left;
+    width: 50%;
   }
 
 }
