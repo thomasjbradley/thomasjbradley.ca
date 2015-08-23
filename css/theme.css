@@ -30,7 +30,7 @@ strong {
 }
 
 a {
-  background-image: linear-gradient(to top, transparent 0, transparent .08em, currentColor .08em, currentColor .16em, transparent .16em, transparent 100%);
+  background-image: linear-gradient(to top, transparent 0, transparent .06em, currentColor .06em, currentColor .13em, transparent .13em, transparent 100%);
   text-shadow: .1em 0 0 #fff, .1em .1em 0 #fff, 0 .1em 0 #fff, -.1em .1em 0 #fff, -.1em 0 0 #fff;
 
   color: var(--color-brand);
