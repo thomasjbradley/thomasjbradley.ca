@@ -6,7 +6,7 @@ layout: default
 
   <div class="section section-top">
 
-    <header role="banner">
+    <header role="banner" vocab="http://schema.org/" typeof="Person">
 
       <strong class="logo no-mark-link">
         <svg class="rocket-img" viewBox="0 0 138 256">
@@ -16,10 +16,10 @@ layout: default
 
       <div class="grid grid-middle">
         <div class="unit [ xs-1 s-1 m-1 l-2-3 ] wrapper">
-          <h1 class="exa text-dark" tabindex="0">Thomas J Bradley</h1>
-          <p class="giga text-medium"><strong>I believe that everybody should perpetually learn, try, build, break, &amp; fix things—the Open Web is the perfect platform for exactly that.</strong></p>
+          <h1 class="exa text-dark" tabindex="0" property="name">Thomas J Bradley</h1>
+          <p class="giga text-medium" property="description"><strong>I believe that everybody should perpetually learn, try, build, break, &amp; fix things—the Open Web is the perfect platform for exactly that.</strong></p>
 
-          <p class="link giga push-1-2"><a href="mailto:hey@thomasjbradley.ca">hey@thomasjbradley.ca</a></p>
+          <p class="link giga push-1-2"><a href="mailto:hey@thomasjbradley.ca" property="email">hey@thomasjbradley.ca</a></p>
           <ul class="giga push-1-2 list-group social-links">
             <li class="link push-1-4"><a href="https://github.com/thomasjbradley" rel="external">GitHub</a></li>
             <li class="link push-1-4"><a href="https://www.goodreads.com/author/show/3917042.Thomas_J_Bradley" rel="external">Goodreads</a></li>
@@ -29,7 +29,13 @@ layout: default
       </div>
 
       <div class="photo">
-        <img class="flex" src="thomasjbradley.jpg" alt="">
+        <img class="flex" src="thomasjbradley.jpg" alt="" property="image">
+      </div>
+
+      <div hidden property="address" typeof="PostalAddress">
+        <meta property="addressLocality" content="Ottawa">
+        <meta property="addressRegion" content="Ontario">
+        <meta property="addressCountry" content="Canada">
       </div>
 
     </header>
