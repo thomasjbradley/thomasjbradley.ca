@@ -68,6 +68,7 @@ My favourite person in the world is my partner in crime, Liz. Together we have t
 ## License & copyright
 
 Text, graphics & design © Thomas J Bradley
-Code licensed under the [MIT License](https://github.com/thomasjbradley/thomasjbradley.ca/blob/gh-pages/LICENSE)
-Photography © [elizabeth&amp;jane photography](http://elizabethandjane.ca)
 
+Code licensed under the [MIT License](https://github.com/thomasjbradley/thomasjbradley.ca/blob/gh-pages/LICENSE)
+
+Photography © [elizabeth&amp;jane photography](http://elizabethandjane.ca)
