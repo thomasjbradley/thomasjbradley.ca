@@ -11,7 +11,7 @@ var
 gulp.task('css-main', function () {
   return gulp.src('css/main.css')
     .pipe(cssnext())
-    .pipe(autoprefixer({ cascade: false, browsers: 'last 2 versions' }))
+    .pipe(autoprefixer({ cascade: false, browsers: 'last 3 versions' }))
     .pipe(replace(/svg\>/g, 'svg%3E'))
     .pipe(replace(/\<svg/g, '%3Csvg'))
     .pipe(replace(/\>\</g, '%3E%3C'))
