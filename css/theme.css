@@ -150,6 +150,7 @@ p {
 }
 
 .link {
+  clear: both;
   padding-left: 1.2em;
   position: relative;
   text-overflow: ellipsis;
@@ -222,6 +223,7 @@ p {
   }
 
   .link-short {
+    clear: none;
     float: left;
     width: 50%;
   }
@@ -269,6 +271,7 @@ p {
   }
 
   .link-short {
+    clear: both;
     float: none;
     width: 100%;
   }
@@ -278,6 +281,7 @@ p {
 @media only screen and (min-width: 74em) {
 
   .link-short {
+    clear: none;
     float: left;
     width: 50%;
   }
