@@ -8,7 +8,7 @@
 
 #### [☛ thomasjbradley.ca](https://thomasjbradley.ca)
 
-Thomas J Bradley is a Professor, Developer, and Writer of The Open Web. I believe that everybody should perpetually learn, try, build, break, & fix things.
+Thomas J Bradley is a Professor, Developer, and Author of The Open Web. I believe that everybody should perpetually learn, try, build, break, & fix things.
 
 - **[hey@thomasjbradley.ca](mailto:hey@thomasjbradley.ca)**
 - [GitHub](https://github.com/thomasjbradley)
@@ -38,7 +38,7 @@ The Web empowers humans in every nook and cranny of the world, and I endeavour t
 - [Ground Hog Day Roundup](http://groundhogdayroundup.ca/)
 - [Ottawa Dog Park Finder](http://parkfinder.ottawadogblog.ca/)
 
-### Writer
+### Author
 
 I create punctuated phrases, either in the English language or in a programming language—the keyboard is my bestie.
 
