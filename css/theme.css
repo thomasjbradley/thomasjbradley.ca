@@ -77,6 +77,14 @@ dd {
   padding: 3rem 0.75rem;
 }
 
+.footer-details {
+  padding-bottom: 1.5rem;
+}
+
+.footer-copyright {
+  padding-top: 0;
+}
+
 .page {
   padding-left: 16px;
 }
@@ -258,6 +266,14 @@ dd {
     clear: none;
     float: left;
     width: 50%;
+  }
+
+  .footer-details {
+    padding-bottom: 3rem;
+  }
+
+  .footer-copyright {
+    padding-top: 3rem;
   }
 
 }
