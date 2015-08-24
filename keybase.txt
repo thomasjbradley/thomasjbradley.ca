@@ -1,0 +1,82 @@
+==================================================================
+https://keybase.io/thomasjbradley
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://thomasjbradley.ca
+  * I am thomasjbradley (https://keybase.io/thomasjbradley) on keybase.
+  * I have a public key with fingerprint CE69 0D3C 8E37 6BD9 538B  9EDA 3154 4923 0C25 CE99
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.8"
+        },
+        "key": {
+            "fingerprint": "ce690d3c8e376bd9538b9eda315449230c25ce99",
+            "host": "keybase.io",
+            "key_id": "315449230C25CE99",
+            "uid": "db3f858b8c4a6deb85ce14e9ebec9919",
+            "username": "thomasjbradley"
+        },
+        "merkle_root": {
+            "ctime": 1433331077,
+            "hash": "211a406081496c4f78c076042457e82f0218b50b1d01041a00f086a815750f05335d3ac6419a6bfbddbc527a20435a21c00bd9a2a3802414df8fb59fe752d305",
+            "seqno": 237771
+        },
+        "service": {
+            "hostname": "thomasjbradley.ca",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1433331090,
+    "expire_in": 157680000,
+    "prev": "a0be06e7da84ec70b03a43cfae81b966b1f5942ddc3dc9f15269e2cb2cbcc8c8",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Comment: GPGTools - https://gpgtools.org
+
+owFtUn1QFVUUhyfGRxqMk6QYqIvyHIQ3d793XxAaAaMwiQWR08fr3rt3YR/wFvY9
+EMRnKWUhzlQwhkKNMWpWVOhQk+g0FoMwgsPUFOU4Gg5JQAkmqaN8ZLsMfU5n7h/n
+3vM7v3N+557XF84LCAukczbELljddyCwdxQF5HqG6qoopCuVlLOKwkUa8fgszwOL
+CeWkCkklgl7i0PQVHl0hDrd3xRwmgSonhlfTPSYKOESHRPkTLLiVrGqefGKUGJrF
+RWEiyEBhsURYUUCKzLMSkokCWZrnOJlhAWZ4TGTZpCzQvb5/VaVmOV2aYr7+hU9l
++NS0WXzZbEBBrCrxEpIwBwWFIMmkozkiE0SwLNOzQC8x5iT5CvRi6HUjAypFZrtm
+18XEKCwiLkPXZ6Vjn2YBaY41jQaiaPYFvQVmKkPTkAMCkGhOFjCnihIGogA4huNF
+IjEqYGgJ8QDRCqABR0MAVCAJUKJ5kTddnmV5hYVY4GgZCkhFioIwz4iQARzLQ4bG
+AJjzgQxkJcBwNKeokop4WSUizygs4E0hXlLq0Sknw4qiSPutu1GuYWL1bQ3vfzU6
+MDQzSwzdp2O9yAwX+HwlXqcpvZ3yVZZYCVsJcs1RuZDmUcwP/OcPW5X+MxYZJFCk
+okQziEuzELwoSMA0qxApNykhQAQIRFSgxBEsAgRYyLFYhUSikSwIiFZ5mWMUBbMK
+llWaZwSZMBiZB2MJS3+LZRMoH8w3Kb1avgf6ygxC+WtsDwYFBIYF3DPfZq1wQFho
+xJ97XbskIqB2aaPa6UroiOwKzoy7A+CtioFH3b2dtenztsHP7tt6CtkPRp+PKs3K
+KJeSL30y1FOVtT5lKmtH2oGR6T3pewb765/cmHGH2m172R7iVtdwr1zfmVd/ZOi5
+xYt+L0W8e9Pdjlc9qyYmSsd+wtMVRydWGOGbbx2jKpVduWdH2A/ClJFVA0H7v92Z
+JF+f7F8Wmb4MXRPV7O0ru7VlfSHid9oNIfvQF+87OwZip92LtzkHPcOB+wZjmjJK
+xlsL/eOHr9TB/etOp7ifvulvaV/O58/gHlyWds4T+TCfVNkWdLP6hdTx9Ze6GurD
+8h9p2mJPnD+S4xj4OOHTzPc2j8LwIxcjuneR0MHQr/XXNro2dG7XJoa55l+jv3x+
+7fzfOkqbjbIxZxUbG3f7gaG2cJt/5ufqeHdy4cqoPkff1fjq/rFTD9kPRfd+5U8p
+rGg5fvJyrhIVFdx2Yibvm47Vpzszi5qLQqfUxukdZ8o7n/Ff2DEeFf1W8mTdj7Zf
+Prc5S2/nHP4wr2H3QOjCkNYlT5Qdcj2bvbalPaV/Mu9d+/36RMwV+7lF44/XXGyc
+mjl5b/Gm5ZNNP5zfHmIXGpLmNd1ord8Xd9YWGb2m5uqx4MHkkQVHz/jffPGl7O87
+uhObbG/TF0bH4iGd1RNsy7372DtvfHR5Z/BTh1On914LPL63ER6s3jK8LiYosa1r
+afbRE38A
+=cMjS
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/thomasjbradley
+
+==================================================================
