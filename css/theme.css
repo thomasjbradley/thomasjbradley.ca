@@ -104,18 +104,12 @@ dd {
 
 .section-top,
 .section-bottom {
-  /*background-image: linear-gradient(to bottom right, var(--color-brown-offwhite), #fff);*/
-  /*background-color: var(--color-brown-lighter);*/
-  background-color: #fafafa;
+  background-color: var(--color-grey-light);
 }
 
 .section-top::before,
 .section-top::after {
   background-color: var(--color-brand);
-}
-
-.section-top a {
-  /*text-shadow: .1em 0 0 var(--color-brown-lighter), .1em .1em 0 var(--color-brown-lighter), 0 .1em 0 var(--color-brown-lighter), -.1em .1em 0 var(--color-brown-lighter), -.1em 0 0 var(--color-brown-lighter);*/
 }
 
 .section-bottom {
@@ -127,6 +121,11 @@ dd {
   background-color: #5c1d0d;
 }
 
+.section-top a,
+.section-bottom a {
+  text-shadow: .1em 0 0 var(--color-grey-light), .1em .1em 0 var(--color-grey-light), 0 .1em 0 var(--color-grey-light), -.1em .1em 0 var(--color-grey-light), -.1em 0 0 var(--color-grey-light);
+}
+
 .section-bottom a {
   color: #999;
 }
@@ -135,33 +134,13 @@ dd {
   color: #666;
 }
 
-.section-prof {
-  /*background-image: linear-gradient(to bottom right, var(--color-brown-offwhite), #fff);*/
-  /*background-color: var(--color-brown-medium);*/
-}
-
 .section-prof::before {
   background-color: #ba3b1a;
-}
-
-.section-dev {
-  /*background-image: linear-gradient(to bottom right, var(--color-brown-offwhite), #fff);*/
-  /*background-color: var(--color-brown-lightest);*/
 }
 
 .section-dev::before,
 .section-dev::after {
   background-color: #a83517;
-}
-
-.section-prof a,
-.section-dev a {
-  /*text-shadow: .1em 0 0 var(--color-brown-lightest), .1em .1em 0 var(--color-brown-lightest), 0 .1em 0 var(--color-brown-lightest), -.1em .1em 0 var(--color-brown-lightest), -.1em 0 0 var(--color-brown-lightest);*/
-}
-
-.section-write {
-  /*background-image: linear-gradient(to bottom right, var(--color-brown-offwhite), #fff);*/
-  /*background-color: var(--color-brown-offwhite);*/
 }
 
 .section-write::before {
@@ -171,10 +150,6 @@ dd {
 .section-nerd::before,
 .section-nerd::after {
   background-color: #7a2611;
-}
-
-.section-family {
-  /*background-image: linear-gradient(to bottom right, var(--color-brown-offwhite), #fff);*/
 }
 
 .section-family::before,

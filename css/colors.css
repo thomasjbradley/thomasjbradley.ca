@@ -3,23 +3,12 @@
   --color-brand-bright: #f03607;
 
   --color-brown: #544f4e;
-/*  --color-brown-medium: #f5f0eb;
-  --color-brown-offwhite: #fcf8f4;
-  --color-brown-lightest: #f7f3ef;
-  --color-brown-lighter: #f0eae4;
-*/  --color-brown-light: #dbd3cc;
+  --color-brown-light: #dbd3cc;
   --color-brown-dark: #2e2b2b;
+
+  --color-grey-light: #fafafa;
 }
 
 .brand {
   color: var(--color-brand);
 }
-/*
-.brand-medium {
-  color: var(--color-brand-darker);
-}
-
-.brand-dark {
-  color: var(--color-brand-darkest);
-}
-*/
