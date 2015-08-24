@@ -124,7 +124,7 @@ dd {
 
 .section-bottom::before,
 .section-bottom::after {
-  background-color: var(--color-brand-super-dark);
+  background-color: #5c1d0d;
 }
 
 .section-bottom a {
@@ -141,7 +141,7 @@ dd {
 }
 
 .section-prof::before {
-  background-color: var(--color-brand-medium);
+  background-color: #ba3b1a;
 }
 
 .section-dev {
@@ -151,7 +151,7 @@ dd {
 
 .section-dev::before,
 .section-dev::after {
-  background-color: var(--color-brand-dark);
+  background-color: #a83517;
 }
 
 .section-prof a,
@@ -165,7 +165,12 @@ dd {
 }
 
 .section-write::before {
-  background-color: var(--color-brand-darker);
+  background-color: #8f2d15;
+}
+
+.section-nerd::before,
+.section-nerd::after {
+  background-color: #7a2611;
 }
 
 .section-family {
@@ -174,19 +179,31 @@ dd {
 
 .section-family::before,
 .section-family::after {
-  background-color: var(--color-brand-darkest);
+  background-color: #69210f;
 }
 
 .photo {
+  overflow: hidden;
+
+  border-radius: 50%;
+}
+
+.photo-wrapper {
+  padding: 1.5rem;
+}
+
+.photo-family {
+  max-width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.me {
   right: .75rem;
   position: absolute;
   top: 10px;
   width: 70px;
   height: 70px;
-
-  overflow: hidden;
-
-  border-radius: 50%;
 }
 
 .link {
@@ -241,7 +258,7 @@ dd {
     fill: #fff;
   }
 
-  .photo {
+  .me {
     height: 80px;
     top: 1rem;
     width: 80px;
@@ -294,13 +311,14 @@ dd {
   }
 
   .section-dev::before,
-  .section-family::before {
+  .section-nerd::before {
     content: none;
   }
 
   .section-top::after,
   .section-bottom::after,
   .section-dev::after,
+  .section-nerd::after,
   .section-family::after {
     content: " ";
     bottom: 0;
@@ -310,7 +328,7 @@ dd {
     width: 30px;
   }
 
-  .photo {
+  .me {
     height: 140px;
     right: 3rem;
     top: 50%;
@@ -329,7 +347,7 @@ dd {
 
 @media only screen and (min-width: 68em) {
 
-  .photo {
+  .me {
     height: 240px;
     width: 240px;
   }
