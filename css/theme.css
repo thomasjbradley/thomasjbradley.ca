@@ -55,6 +55,18 @@ a:focus {
   color: var(--color-brown-dark);
 }
 
+.text-light {
+  color: #999;
+}
+
+.text-light a {
+  color: #999;
+}
+
+.text-light a:hover {
+  color: #666;
+}
+
 p {
   max-width: 26em;
 }
@@ -112,10 +124,6 @@ dd {
   background-color: var(--color-brand);
 }
 
-.section-bottom {
-  color: #999;
-}
-
 .section-bottom::before,
 .section-bottom::after {
   background-color: #5c1d0d;
@@ -124,14 +132,6 @@ dd {
 .section-top a,
 .section-bottom a {
   text-shadow: .1em 0 0 var(--color-grey-light), .1em .1em 0 var(--color-grey-light), 0 .1em 0 var(--color-grey-light), -.1em .1em 0 var(--color-grey-light), -.1em 0 0 var(--color-grey-light);
-}
-
-.section-bottom a {
-  color: #999;
-}
-
-.section-bottom a:hover {
-  color: #666;
 }
 
 .section-prof::before {
