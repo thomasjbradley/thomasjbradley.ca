@@ -17,13 +17,27 @@
   <meta property="os:rcs_type" content="git">
   <meta property="os:src" content="git@github.com:thomasjbradley/thomasjbradley.ca.git">
   <meta property="os:issue" content="https://github.com/thomasjbradley/thomasjbradley.ca/issues">
-  <style>
-    {% include main.min.css %}
-  </style>
+  <link rel="prefetch" src="fonts/breeserif-regular.woff">
+  <style>{% include main.min.css %}</style>
 </head>
 <body>
 
 {{content}}
 
+<script>{% include fontfaceobserver.js %}</script>
+<script>
+  var observer;
+
+  if (!sessionStorage.breeSerifLoaded) {
+    observer = new FontFaceObserver('Bree Serif');
+
+    observer.check().then(function () {
+      document.querySelector('html').className += 'fonts-loaded';
+      sessionStorage.breeSerifLoaded = true;
+    });
+  } else {
+    document.querySelector('html').className += 'fonts-loaded';
+  }
+</script>
 </body>
 </html>

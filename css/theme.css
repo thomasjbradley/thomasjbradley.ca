@@ -3,7 +3,13 @@ html {
 
   background-color: #fff;;
 
-  font-family: "Bree Serif",sans-serif;
+  font-family: Georgia,sans-serif;
+  font-weight: bold;
+}
+
+html.fonts-loaded {
+  font-family: "Bree Serif",Arial,sans-serif;
+  font-weight: normal;
 }
 
 body {
