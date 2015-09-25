@@ -7,7 +7,7 @@ html {
   font-weight: bold;
 }
 
-html.fonts-loaded {
+.fonts-loaded {
   font-family: "Bree Serif",Arial,sans-serif;
   font-weight: normal;
 }

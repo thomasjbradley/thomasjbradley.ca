@@ -32,11 +32,11 @@
     observer = new FontFaceObserver('Bree Serif');
 
     observer.check().then(function () {
-      document.querySelector('html').className += 'fonts-loaded';
+      document.documentElement.className += ' fonts-loaded';
       sessionStorage.breeSerifLoaded = true;
     });
   } else {
-    document.querySelector('html').className += 'fonts-loaded';
+    document.documentElement.className += ' fonts-loaded';
   }
 </script>
 </body>
