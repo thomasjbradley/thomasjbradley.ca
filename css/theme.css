@@ -57,6 +57,10 @@ a:focus {
   text-shadow: none;
 }
 
+.block {
+  display: block;
+}
+
 .text-dark {
   color: var(--color-brown-dark);
 }
