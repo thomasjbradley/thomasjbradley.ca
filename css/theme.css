@@ -3,12 +3,12 @@ html {
 
   background-color: #fff;;
 
-  font-family: Georgia,sans-serif;
+  font-family: Georgia,serif;
   font-weight: bold;
 }
 
 .fonts-loaded {
-  font-family: "Bree Serif",Arial,sans-serif;
+  font-family: "Bree Serif",Georgia,serif;
   font-weight: normal;
 }
 
