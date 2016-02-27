@@ -12,9 +12,14 @@
     "gulp-replace": "^0.5.3"
   },
   "scripts": {
+    "start": "npm run site-server",
     "gulp": "gulp",
-    "gulp-watch": "gulp watch",
-    "jekyll-watch": "jekyll serve --incremental",
-    "build": "gulp build"
+    "assets-watch": "gulp watch",
+    "assets-build": "gulp build",
+    "site-server": "jekyll serve --incremental",
+    "site-build": "jekyll build",
+    "build": "npm run assets-build && npm run site-build",
+    "deploy": "rsync --archive --recursive --delete --delete-excluded --progress --compress --chmod=u=rwX,g=rX ./_site/ keycdn:zones/thomasjbradley/",
+    "build-n-deploy": "npm run build && npm run deploy"
   }
 }
