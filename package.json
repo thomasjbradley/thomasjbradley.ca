@@ -3,23 +3,22 @@
   "version": "4.1.1",
   "private": true,
   "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^2.3.1",
-    "gulp-concat": "^2.5.2",
-    "gulp-cssnano": "^1.0.0",
-    "gulp-cssnext": "^1.0.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-replace": "^0.5.3"
+    "cssnano": "^3.7.3",
+    "onchange": "^2.5.0",
+    "parallelshell": "^2.0.0",
+    "postcss-assets": "^4.1.0",
+    "postcss-cli": "^2.5.2",
+    "postcss-cssnext": "^2.7.0",
+    "postcss-import": "^8.1.2"
   },
   "scripts": {
-    "start": "npm run site-server",
-    "gulp": "gulp",
-    "assets-watch": "gulp watch",
-    "assets-build": "gulp build",
-    "site-server": "jekyll serve --incremental",
-    "site-build": "jekyll build",
-    "build": "npm run assets-build && npm run site-build",
-    "deploy": "rsync --archive --recursive --delete --delete-excluded --progress --compress --chmod=u=rwX,g=rX ./_site/ keycdn:zones/thomasjbradley/",
+    "build-site": "jekyll build",
+    "server": "jekyll serve --incremental",
+    "build-css": "postcss -u postcss-import -u postcss-cssnext --postcss-cssnext.browsers 'last 2 versions' -u postcss-assets -u cssnano -o _includes/main.min.css css/main.css",
+    "watch-css": "onchange 'css/*.css' -- npm run build-css",
+    "watch": "parallelshell 'npm run watch-css' 'npm run server'",
+    "build": "npm run build-css && npm run build-site",
+    "deploy": "rsync --archive --recursive --delete --delete-excluded --progress --compress --chmod=u=rwX,go=rX ./_site/ keycdn:zones/thomasjbradley/",
     "build-n-deploy": "npm run build && npm run deploy"
   }
 }
