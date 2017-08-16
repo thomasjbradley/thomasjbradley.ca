@@ -12,8 +12,8 @@
     "postcss-import": "^8.1.2"
   },
   "scripts": {
+    "start": "jekyll serve --incremental",
     "build-site": "jekyll build",
-    "server": "jekyll serve --incremental",
     "build-css": "postcss -u postcss-import -u postcss-cssnext --postcss-cssnext.browsers 'last 2 versions' -u postcss-assets -u cssnano -o _includes/main.min.css css/main.css",
     "watch-css": "onchange 'css/*.css' -- npm run build-css",
     "watch": "parallelshell 'npm run watch-css' 'npm run server'",
