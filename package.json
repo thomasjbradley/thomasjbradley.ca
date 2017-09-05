@@ -4,19 +4,22 @@
   "private": true,
   "devDependencies": {
     "cssnano": "^3.7.3",
-    "onchange": "^2.5.0",
-    "parallelshell": "^2.0.0",
-    "postcss-assets": "^4.1.0",
-    "postcss-cli": "^2.5.2",
-    "postcss-cssnext": "^2.7.0",
-    "postcss-import": "^8.1.2"
+    "html-minifier": "^3.5.3",
+    "npm-run-all": "^4.1.1",
+    "onchange": "^3.2.1",
+    "postcss-assets": "^5.0.0",
+    "postcss-cli": "^4.1.0",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^10.0.0"
   },
   "scripts": {
     "start": "jekyll serve --incremental",
-    "build-site": "jekyll build",
-    "build-css": "postcss -u postcss-import -u postcss-cssnext --postcss-cssnext.browsers 'last 2 versions' -u postcss-assets -u cssnano -o _includes/main.min.css css/main.css",
+    "minify-site": "html-minifier --file-ext=html --input-dir=_site --output-dir=_site --config-file=.html-minifier.json",
+    "build-site": "jekyll build && npm run minify-site",
+    "postcss": "postcss --no-map -u postcss-import -u postcss-cssnext --postcss-cssnext.browsers 'last 2 versions' -u postcss-assets -u cssnano --cssnano.safe",
+    "build-css": "npm run postcss -- -o _includes/main.min.css css/main.css",
     "watch-css": "onchange 'css/*.css' -- npm run build-css",
-    "watch": "parallelshell 'npm run watch-css' 'npm run server'",
+    "watch": "npm-run-all --parallel watch-css server",
     "build": "npm run build-css && npm run build-site",
     "deploy": "rsync --archive --recursive --delete --delete-excluded --progress --compress --chmod=u=rwX,go=rX ./_site/ keycdn:zones/thomasjbradley/",
     "build-n-deploy": "npm run build && npm run deploy"
