@@ -1,6 +1,6 @@
 {
   "name": "thomasjbradley",
-  "version": "4.1.1",
+  "version": "4.2.0",
   "private": true,
   "devDependencies": {
     "cssnano": "^3.7.3",
