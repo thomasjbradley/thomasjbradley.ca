@@ -21,7 +21,7 @@
     "watch-css": "onchange 'css/*.css' -- npm run build-css",
     "watch": "npm-run-all --parallel watch-css server",
     "build": "npm run build-css && npm run build-site",
-    "deploy": "rsync --archive --recursive --delete --delete-excluded --progress --compress --chmod=u=rwX,go=rX ./_site/ keycdn:zones/thomasjbradley/",
+    "deploy": "rsync --recursive --checksum --delete --delete-excluded --verbose --compress --chmod=D2755,F644 --exclude-from=rsync-exclude.txt ./_site/ thomasjbradley@rsync.keycdn.com:thomasjbradley/",
     "build-n-deploy": "npm run build && npm run deploy"
   }
 }
